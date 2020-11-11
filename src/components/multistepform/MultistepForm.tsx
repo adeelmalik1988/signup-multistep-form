@@ -19,7 +19,9 @@ function MultistepForm() {
             padding: '10px',
             margin: 'auto',
             display: 'flex',
-            justifyItems: 'center'
+            justifyContent: 'center',
+            alignItems: 'center',
+            height: '100%'
         }}>
             <Card style={{
                 width: '500px',
@@ -89,14 +91,12 @@ function MultistepForm() {
                             </Box>
 
                             <Box paddingBottom={2} >
-                            <InputLabel id="bank">Please Select Bank</InputLabel>
+                            <InputLabel htmlFor="bank">Please Select Your Bank</InputLabel>
                                 <Field
                                 fullWidth
                                     component={Select}
                                     name="selectBank"
-                                    inputProps={{
-                                        id: 'bank',
-                                      }}
+                                    id='bank'
                                     label='Please select your bank'
                                     
                                 > <MenuItem value="">

@@ -16,6 +16,12 @@ function Home() {
             <Typography variant='h4' >
                 Welcome
             </Typography>
+            
+            <Link to='/signup' >{
+            <Typography variant='body1' >
+                Please proceed with the Signup Process
+            </Typography>}
+            </Link>
             </Card>
 
         </div>
