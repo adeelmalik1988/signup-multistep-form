@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import { Button, CircularProgress, Grid, Step, StepLabel, Stepper } from '@material-ui/core'
 import { Formik, Form, FormikConfig, FormikValues } from 'formik'
-import { Link } from 'react-router-dom';
-import Swal from 'sweetalert2'
+//import Swal from 'sweetalert2'
 
 
 
@@ -28,15 +27,15 @@ export function FormikStepper({ children, ...props }: FormikConfig<FormikValues>
     const isLastStep = () => {
         return step === childrenArray.length - 1;
     }
-    const formSubmissionNotification = () => {
+    // const formSubmissionNotification = () => {
         
-        Swal.fire(
-            {
-                titleText: 'Forum Submission Completed Successfully',
-            }
-        )
+    //     Swal.fire(
+    //         {
+    //             titleText: 'Forum Submission Completed Successfully',
+    //         }
+    //     )
 
-    }
+    // }
 
 
     return (
